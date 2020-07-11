@@ -6,12 +6,13 @@ import { normaliseSize as normalise } from '../../utils/metadata'
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    marginHorizontal: 2+'%',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center'
   }, 
   numDiv: {
     flex: 1, 
     paddingTop: 1+'%',
+    alignItems: 'center',
     justifyContent: 'center',
   },
   numTxt: {
@@ -23,7 +24,6 @@ const styles = StyleSheet.create({
   contentDiv: {
     flex: 1,
     justifyContent: 'flex-start',
-    paddingVertical: 1+'%'
   },
   contentTxt: {
     fontSize: normalise(14),

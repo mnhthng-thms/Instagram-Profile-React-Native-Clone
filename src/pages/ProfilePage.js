@@ -28,7 +28,7 @@ const ProfilePage = (props) => {
         occupation={props.occupation}
       />
       <Counter
-        photosNum={props.photoNum}
+        photosNum={props.photosNum}
         followersNum={props.followersNum}
         followingNum={props.followingNum}
       />
