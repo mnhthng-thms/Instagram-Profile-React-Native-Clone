@@ -7,6 +7,8 @@ const styles = {
   flex: 2,
   // justifyContent: 'flex-start', is default value already
   alignItems: 'flex-start',
+  marginTop: 5+'%',
+  // fontFamily: 'SFProDisplay'
   fontSize: normalise(16), 
   fontWeight: 'bold',
   color: colours["BLUE_HAZE"]

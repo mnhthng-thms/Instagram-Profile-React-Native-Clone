@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     flex: 1, 
     alignItems: 'stretch',
     justifyContent: 'center',    // x-axis alignment
-    marginLeft: 2+'%',
+    marginLeft: 5+'%',
     marginRight: 2+'%'
   }, 
   avatar: {

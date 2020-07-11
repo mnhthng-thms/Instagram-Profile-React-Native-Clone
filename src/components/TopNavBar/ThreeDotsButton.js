@@ -8,7 +8,6 @@ const ThreeDotsButton = () => {
   return (
     <TouchableOpacity
       style={{
-        paddingRight: 2+'%', 
         alignSelf: 'center'
       }}
     >

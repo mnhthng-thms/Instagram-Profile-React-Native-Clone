@@ -10,18 +10,17 @@ import ButtonsContainer from './ButtonsContainer'
 // this stylesheet outlines Flexbox containers
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: colours["GREY_1"],
     flex: 3, 
-    marginTop: 1+'%',
+    marginVertical: 2+'%',
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignContent: 'stretch'
   }, 
   rightContainer: {
-    flex: 3,
+    flex: 1.618,
     flexDirection: 'column',
     justifyContent: 'flex-start',
-    alignItems: 'center'
+    alignContent: 'flex-start'
   }
 })
 

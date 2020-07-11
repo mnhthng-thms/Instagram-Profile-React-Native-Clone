@@ -7,8 +7,10 @@ import { normaliseSize as normalise } from '../../utils/metadata'
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    justifyContent: 'space-evenly',
-    alignItems: 'baseline'
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    paddingVertical: 2+'%'  
   }, 
   btn: {
     borderRadius: normalise(30), 
@@ -25,20 +27,25 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   followBtn: {
-    backgroundColor: colours["BUNTING"],
-    width: normalise(100),
-    height: normalise(61.8), 
+    flex: 5,
+    marginRight: 2+'%',
+    width: normalise(70),
+    height: normalise(42), 
+    backgroundColor: colours["PURPLE_1"],
   },
   followTxt: {
     // fontFamily: "SFProDisplay",
-    fontWeight: '500',
+    fontWeight: 'bold',
     fontSize: normalise(14),
     color: colours["WHITE"]
   }, 
   sendBtn: {
+    flex: 3,
+    marginLeft: 4+'%',
+    marginRight: 8+'%',
+    width: normalise(38.5),
+    height: normalise(42), 
     backgroundColor: colours["BLUE_DEEP_SKY"], 
-    width: normalise(75),
-    height: normalise(61.8), 
   }
 })
 

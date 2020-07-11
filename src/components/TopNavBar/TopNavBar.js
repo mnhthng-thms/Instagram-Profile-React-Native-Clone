@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row', 
     alignContent: 'center',
     justifyContent: 'space-between',
+    paddingTop: 2+'%'
   }
 })
 
