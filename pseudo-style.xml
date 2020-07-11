@@ -1,0 +1,149 @@
+<GlobalContainer
+  flex: 12, 
+  backgroundColor: colourMap["WHITE"]
+>
+  <TopNavBar
+    flex: 1,  
+    alignItems: 'baseline'
+    justifyContent: 'space-between'
+  >
+    <BackIcon>
+    </BackIcon>
+    <MoreIcon
+      alignSelf: 'end'>
+    </MoreIcon>
+  </TopNavBar>
+  <Header
+    flex: 3,
+    marginTop: 1+'%',
+  >
+    <HeaderContainer
+      flex-direction: 'row'
+      flex: 4
+    >
+      <Avatar
+        flex: 1,
+        alignSelf: center,
+        width: normaliseSize(100),
+        height: normaliseSize(100),
+      />
+      <HeaderRight
+        flex: 3,
+        paddingRight: 2+'%'
+      >
+        <FlexContainer
+          flexDirection: 'row', 
+          flex: 4
+        >
+          <UserName
+            flex: 1,
+          >
+          </UserName>
+          <Occupation
+            flex: 2
+            alignContent: 'flex-start'
+          >
+          </Ocupation>
+          <ButtonsContainer
+            flex: 1,
+            justifyContent: 'center'
+          >
+          </ButtonsContainer>
+        </FlexContainer>
+      </HeaderRight>
+    </HeaderContainer>
+  </Header>
+  <Counter
+    flex: 2
+  >
+    <FlexContainer
+     flex-direction: 'column'
+     flex: 3
+     alignItems: 'center'
+    >
+      <!-- -->
+    </FlexContainer>
+  </Counter>
+  <Body
+    flex: 5
+  >
+  </Body>
+  <BottomNavBar
+    flex: 1
+  >
+  </BottomNavBar>
+</GlobalContainer>
+
+<!-- The remainder -->
+
+      <View style={styles.line}></View>
+
+      <View style={styles.count}>
+        <View style={styles.countPhotos}>
+            <Text style={styles.nameText}>{imgData.length}</Text>
+            <Text style={styles.jobText}>Photos</Text>
+        </View>
+        <View style={styles.countFollowers}>
+            <Text style={styles.nameText}>{count}</Text>
+            <Text style={styles.jobText}>Followers</Text>
+        </View>
+        <View style={styles.countFollowing}>
+            <Text style={styles.nameText}>7</Text>
+            <Text style={styles.jobText}>Following</Text>
+        </View>
+      </View>
+
+    {/* <ScrollView style={{
+      flex: 0.6,
+    }}>
+      <View style={styles.imagesGroup}>
+        <View style={{flexDirection: 'column'}}>
+            {imgData.slice(0, centerImg).map(item => {
+              return(
+                <Image source={item.imgSource} style={styles.images}></Image>
+              )
+            })}
+        </View>
+
+        <View style={{flexDirection: 'column'}}>
+            {imgData.slice(centerImg, centerImg*2).map(item => {
+              return(
+                <Image source={item.imgSource} style={styles.images}></Image>
+              )
+            })}
+        </View>
+
+        <View style={{flexDirection: 'column'}}>
+            {imgData.slice(centerImg*2).map(item => {
+              return(
+                <Image source={item.imgSource} style={styles.images}></Image>
+              )
+            })}
+        </View>
+
+      </View>         
+    </ScrollView> */}
+
+    <ScrollView 
+    style={{flex: 0.6}}>
+        <View>
+          
+        </View>
+    </ScrollView>
+
+    <View style={styles.footer}>
+      <TouchableOpacity>
+          <AntDesign style={styles.footerIcons} name="picture" size={35} color="black" />
+      </TouchableOpacity>
+
+      <TouchableOpacity>
+          <Ionicons style={styles.footerIcons} name="md-add-circle-outline" size={38} color="black" />
+      </TouchableOpacity>
+
+      <TouchableOpacity>
+          <Feather style={styles.footerIcons} name="user" size={36} color="black" />
+      </TouchableOpacity>
+        </View>
+
+    </View>
+<!-- End the remainder -->
