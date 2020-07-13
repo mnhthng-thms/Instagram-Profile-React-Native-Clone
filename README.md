@@ -4,7 +4,7 @@ Code submission for the second week's assignment of the 2020 React Native course
 
 ## Screenshots
 
-![Static Screenshot](./assets/screenshot00.png)
+<img src='./assets/screenshot00.png' alt='Static Screenshot' width='40%' height='40%'/>
 
 ## Installation Notes 
 
